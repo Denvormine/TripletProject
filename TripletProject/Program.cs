@@ -8,6 +8,7 @@ string filepath = args[0];
 if (!File.Exists(filepath))
 {
     Console.WriteLine("File doesn't exist");
+    Environment.Exit(1);
 }
 
 ConcurrentDictionary<Triplet, int> tripletDictionary = 
